@@ -2,7 +2,7 @@ require_relative 'input.rb'
 
 class Computer
   include Input
-  attr_reader :colors, :all_guesses
+  attr_reader :colors, :all_guesses, :name
   attr_accessor :s, :turn, :index, :guess
 
   def initialize

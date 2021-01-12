@@ -57,6 +57,7 @@ class Game
   def four_guesses
     4.times do |i|
       puts game_board
+      puts "Thinking... this may take awhile" if breaker.name == 'Computer'
       game_board.add_guess(row: turn, col: i, guess: breaker.new_guess(game_board))
       clear_screen
     end

@@ -2,7 +2,7 @@ require_relative 'input.rb'
 
 class Human
   include Input
-
+  attr_reader :name
   def initialize
     @name = 'Human'
   end
