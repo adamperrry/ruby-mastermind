@@ -76,7 +76,7 @@ class Computer
   def minimax
     results = {}
     all_guesses.each_with_index do |arr, i|
-      next if i.even? && (i % 3).zero? && turn < 5
+      next if i.even? && (i % 3).zero? && (i % 4).zero? && i.positive? && turn < 3
 
       scores = []
       possible_keys.each do |keys|
